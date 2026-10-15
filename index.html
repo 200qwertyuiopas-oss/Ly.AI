@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#090d17">
+  <meta name="description" content="Ly AI — مساعدك الذكي لمساحة تفكير وإنجاز أكثر هدوءًا وخصوصية.">
+  <meta name="color-scheme" content="dark">
+  <title>Ly AI — مساحة أفكارك</title>
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="icon" href="./icons/ly-icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./icons/icon-192.png">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./public-config.js"></script>
+  <script src="./script.js" defer></script>
+</head>
+<body>
+  <div class="ambient ambient-a" aria-hidden="true"></div>
+  <div class="ambient ambient-b" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <section id="auth-screen" class="auth-screen" aria-labelledby="auth-title">
+    <div class="auth-showcase">
+      <a class="brand brand-large" href="./" aria-label="Ly AI الرئيسية">
+        <span class="brand-symbol"><span>Ly</span><i></i></span>
+        <span class="brand-wordmark">Ly <b>AI</b><small>THINK BEYOND</small></span>
+      </a>
+      <div class="showcase-content">
+        <div class="orbit-scene" aria-hidden="true">
+          <div class="orbit orbit-outer"></div><div class="orbit orbit-mid"></div><div class="orbit orbit-inner"></div>
+          <div class="orbit-center"><span>Ly</span><small>AI</small></div>
+          <span class="orbit-dot dot-one"></span><span class="orbit-dot dot-two"></span><span class="orbit-dot dot-three"></span>
+        </div>
+        <p class="overline"><span class="pulse-dot"></span> مساحة ذكية، بإيقاعك</p>
+        <h1>أفكارك تستحق<br><span>مساحة أوسع.</span></h1>
+        <p class="showcase-copy">اكتب، اكتشف، خطّط، وأنجز. مساعدك الشخصي يجمع المحادثة والأدوات المحلية في تجربة واحدة هادئة.</p>
+        <div class="showcase-pills"><span><b>✦</b> محادثات ذكية</span><span><b>⌘</b> أدوات محلية</span><span><b>◈</b> أنت صاحب القرار</span></div>
+      </div>
+      <div class="auth-footnote"><span>LY AI STUDIO</span><span>خصوصيتك أولًا · تحكّمك بيدك</span></div>
+    </div>
+
+    <div class="auth-panel-wrap">
+      <div class="auth-panel">
+        <div class="auth-mobile-brand brand">
+          <span class="brand-symbol"><span>Ly</span><i></i></span>
+          <span class="brand-wordmark">Ly <b>AI</b><small>THINK BEYOND</small></span>
+        </div>
+        <div class="auth-heading">
+          <span class="eyebrow">أهلًا بعودتك</span>
+          <h2 id="auth-title">ادخل إلى مساحتك</h2>
+          <p>سجّل الدخول وتابع أفكارك من أي جهاز.</p>
+        </div>
+
+        <div id="oauth-buttons" class="oauth-buttons">
+          <button class="oauth-button oauth-google" data-provider="google" type="button">
+            <span class="oauth-icon google-icon" aria-hidden="true">G</span><span>المتابعة باستخدام Google</span><span class="oauth-arrow" aria-hidden="true">↗</span>
+          </button>
+          <button class="oauth-button oauth-discord" data-provider="discord" type="button">
+            <span class="oauth-icon discord-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M19.7 5.4A17 17 0 0 0 15.5 4l-.5 1a15 15 0 0 0-6 0l-.5-1a17 17 0 0 0-4.2 1.4C1.7 9.2 1 12.9 1.3 16.5a17 17 0 0 0 5.2 2.6l1.1-1.8-1.7-.8.4-.3c3.3 1.5 6.9 1.5 10.2 0l.4.3-1.7.8 1.1 1.8a17 17 0 0 0 5.2-2.6c.4-4.2-.7-7.9-3.8-11.1ZM8.7 14.3c-1 0-1.8-.9-1.8-2s.8-2 1.8-2 1.8.9 1.8 2-.8 2-1.8 2Zm6.6 0c-1 0-1.8-.9-1.8-2s.8-2 1.8-2 1.8.9 1.8 2-.8 2-1.8 2Z"/></svg></span><span>المتابعة باستخدام Discord</span><span class="oauth-arrow" aria-hidden="true">↗</span>
+          </button>
+          <button class="oauth-button oauth-github" data-provider="github" type="button">
+            <span class="oauth-icon github-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 .9A11.2 11.2 0 0 0 8.5 22.7c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.4-4-1.4-.5-1.3-1.3-1.6-1.3-1.6-1.1-.8.1-.8.1-.8 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.6-1.3-5.6-6A4.7 4.7 0 0 1 5.8 7.4 4.4 4.4 0 0 1 6 4.3s1-.3 3.3 1.3a11.3 11.3 0 0 1 6 0c2.3-1.6 3.3-1.3 3.3-1.3.7 1.8.3 3.1.2 3.4a4.7 4.7 0 0 1 1.2 3.3c0 4.7-2.9 5.7-5.6 6 .4.4.8 1 .8 2v3.1c0 .3.2.7.8.6A11.2 11.2 0 0 0 12 .9Z"/></svg></span><span>المتابعة باستخدام GitHub</span><span class="oauth-arrow" aria-hidden="true">↗</span>
+          </button>
+          <button class="oauth-button oauth-facebook" data-provider="facebook" type="button">
+            <span class="oauth-icon facebook-icon" aria-hidden="true">f</span><span>المتابعة باستخدام Facebook</span><span class="oauth-arrow" aria-hidden="true">↗</span>
+          </button>
+        </div>
+        <p id="oauth-status" class="oauth-status" role="status" hidden></p>
+
+        <div class="auth-divider"><span>أو</span></div>
+        <button id="local-login-toggle" class="local-login-toggle" type="button" aria-expanded="false" aria-controls="local-login-section"><span class="local-key-icon">⌘</span><span>الدخول المحلي على هذا الجهاز</span><span class="chevron">⌄</span></button>
+        <div id="local-login-section" class="local-login-section" hidden>
+          <form id="login-form" class="login-form">
+            <label for="password-input">كلمة مرور Ly AI المحلية</label>
+            <div class="password-wrap">
+              <input id="password-input" name="password" type="password" autocomplete="current-password" placeholder="أدخل كلمة المرور" required>
+              <button id="toggle-password" class="input-action" type="button" aria-label="إظهار كلمة المرور" title="إظهار كلمة المرور"><svg viewBox="0 0 24 24"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></svg></button>
+            </div>
+            <p id="login-error" class="form-error" role="alert" hidden></p>
+            <button class="primary-button login-submit" type="submit"><span>فتح المساحة المحلية</span><span>←</span></button>
+          </form>
+          <p class="local-privacy"><span class="status-dot"></span> كلمة المرور المحلية لا تُرسل إلى مزوّدي تسجيل الدخول.</p>
+        </div>
+        <p id="auth-config-note" class="auth-config-note" hidden>تسجيل الدخول الاجتماعي يحتاج إعداد Supabase موضحًا في README. لا تضع أسرار OAuth هنا أو في GitHub.</p>
+        <div class="auth-legal">بالمتابعة، أنت توافق على استخدام Ly AI وفق إعدادات الخصوصية الخاصة بك.<br><span>المحادثات محفوظة محليًا في هذا المتصفح.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <div id="app-shell" class="app-shell" hidden>
+    <aside id="sidebar" class="sidebar">
+      <div class="sidebar-header">
+        <a class="brand" href="./" aria-label="Ly AI الرئيسية"><span class="brand-symbol"><span>Ly</span><i></i></span><span class="brand-wordmark">Ly <b>AI</b><small>THINK BEYOND</small></span></a>
+        <button id="sidebar-close" class="icon-button sidebar-close" type="button" aria-label="إغلاق القائمة">×</button>
+      </div>
+      <button id="new-chat-button" class="new-chat-button" type="button"><span class="new-chat-plus">＋</span><span>محادثة جديدة</span><kbd>Ctrl K</kbd></button>
+      <div class="sidebar-section-label"><span>مساحتك</span><span class="sidebar-section-line"></span></div>
+      <nav class="sidebar-nav" aria-label="القائمة الرئيسية">
+        <button class="nav-item active" type="button" data-view="chat"><svg viewBox="0 0 24 24"><path d="M20 11.5a7.5 7.5 0 0 1-7.5 7.5H5l-2 2v-7.5a7.5 7.5 0 1 1 17-2Z"/></svg><span>المحادثة</span><kbd>⌘</kbd></button>
+        <button class="nav-item" id="open-settings-nav" type="button"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="m19.4 15 .1.1 1.1.9-1.4 2.4-1.3-.5a7.7 7.7 0 0 1-1.8 1l-.2 1.4h-2.8l-.2-1.4a7.7 7.7 0 0 1-1.8-1l-1.3.5-1.4-2.4 1.1-.9a7.2 7.2 0 0 1 0-2l-1.1-.9 1.4-2.4 1.3.5a7.7 7.7 0 0 1 1.8-1l.2-1.4h2.8l.2 1.4a7.7 7.7 0 0 1 1.8 1l1.3-.5 1.4 2.4-1.1.9a7.2 7.2 0 0 1 0 2Z"/></svg><span>الإعدادات</span></button>
+      </nav>
+      <div class="sidebar-section-label history-label"><span>سجل المحادثات</span><span class="sidebar-section-line"></span></div>
+      <div id="conversation-list" class="conversation-list" aria-label="سجل المحادثات"></div>
+      <div id="history-empty" class="history-empty">ستظهر محادثاتك هنا</div>
+      <div class="sidebar-spacer"></div>
+      <div class="install-card" id="install-card">
+        <div class="install-card-icon"><svg viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="3"/><path d="M9 8h6M9 12h6M9 16h3"/></svg></div>
+        <div class="install-card-copy"><b>خذ Ly AI معك</b><small>ثبّت التطبيق على جهازك</small></div>
+        <button id="install-button" class="install-button" type="button" hidden>تثبيت</button>
+        <button id="install-help-button" class="install-button" type="button">كيف؟</button>
+      </div>
+      <div class="sidebar-bottom">
+        <button id="clear-history-button" class="history-clear-button" type="button"><svg viewBox="0 0 24 24"><path d="M3 6h18M9 6V4h6v2m-9 0 1 14h10l1-14M10 10v6m4-6v6"/></svg><span>مسح سجل المحادثات</span></button>
+        <div class="account-row"><div id="account-avatar" class="account-avatar">L</div><div class="account-info"><b id="account-name">مساحة محلية</b><small id="account-email">مساعدك الخاص</small></div><button id="account-menu-button" class="icon-button tiny-icon-button" type="button" title="إعدادات الحساب" aria-label="إعدادات الحساب">···</button></div>
+        <button id="logout-button" class="logout-button" type="button"><svg viewBox="0 0 24 24"><path d="M10 17l5-5-5-5M15 12H3M12 3h6a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-6"/></svg><span>تسجيل الخروج</span></button>
+      </div>
+    </aside>
+    <button id="sidebar-backdrop" class="sidebar-backdrop" type="button" aria-label="إغلاق القائمة" tabindex="-1"></button>
+
+    <main class="main-panel">
+      <header class="topbar">
+        <div class="topbar-start">
+          <button id="mobile-menu-button" class="icon-button mobile-menu-button" type="button" aria-label="فتح القائمة"><svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+          <div class="topbar-title"><strong id="topbar-title">مساحة المحادثة</strong><span id="topbar-subtitle">اسأل بحرية. أنجز بوضوح.</span></div>
+        </div>
+        <div class="topbar-end"><span id="connection-pill" class="connection-pill offline"><i></i><span id="connection-label">بانتظار الاتصال</span></span><button id="install-top-button" class="top-action-button" type="button" hidden><svg viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M5 16v4h14v-4"/></svg><span>تثبيت</span></button><button id="settings-button" class="top-icon-button" type="button" aria-label="الإعدادات"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19 13.5a7.5 7.5 0 0 0 0-3l1.5-1.2-1.8-3-1.8.7a7.4 7.4 0 0 0-2.6-1.5L14 3h-4l-.3 2.5a7.4 7.4 0 0 0-2.6 1.5L5.3 6.3l-1.8 3L5 10.5a7.5 7.5 0 0 0 0 3l-1.5 1.2 1.8 3 1.8-.7a7.4 7.4 0 0 0 2.6 1.5L10 21h4l.3-2.5a7.4 7.4 0 0 0 2.6-1.5l1.8.7 1.8-3L19 13.5Z"/></svg></button></div>
+      </header>
+
+      <div id="agent-banner" class="agent-banner" hidden><span class="banner-dot"></span><div><b>المساعد المحلي غير متصل</b><p>سجّلت الدخول، لكن Ollama يحتاج إلى تشغيل Ly AI على جهازك. افتح التطبيق المحلي أو راجع إعدادات الاتصال.</p></div><button id="retry-agent-button" type="button">إعادة المحاولة</button></div>
+
+      <section class="conversation-area" aria-label="المحادثة">
+        <div id="welcome-panel" class="welcome-panel">
+          <div class="welcome-emblem"><span class="emblem-spark">✦</span><div class="emblem-core">Ly<span>AI</span></div><i class="emblem-orbit orbit-1"></i><i class="emblem-orbit orbit-2"></i></div>
+          <div class="welcome-overline"><span class="pulse-dot"></span> مساحة جديدة، بداية جديدة</div>
+          <h1>أهلًا بك، ماذا <span>سننجز اليوم؟</span></h1>
+          <p class="welcome-copy">من فكرة صغيرة إلى مهمة واضحة. اسأل، اكتب، خطّط أو اطلب من Ly AI اقتراح إجراء على جهازك. كل تحكّم محلي يحتاج موافقتك.</p>
+          <div class="suggestion-grid">
+            <button class="suggestion-card" data-prompt="اشرح لي فكرة معقدة بطريقة بسيطة وبأمثلة عملية." type="button"><span class="suggestion-icon icon-purple">✳</span><span class="suggestion-copy"><b>اشرح لي فكرة</b><small>افهم أي موضوع خطوة بخطوة</small></span><span class="suggestion-arrow">↗</span></button>
+            <button class="suggestion-card" data-prompt="أنشئ خطة عملية لتعلم البرمجة من الصفر خلال 30 يومًا." type="button"><span class="suggestion-icon icon-blue">⌘</span><span class="suggestion-copy"><b>خطّة قابلة للتنفيذ</b><small>حوّل الهدف إلى خطوات</small></span><span class="suggestion-arrow">↗</span></button>
+            <button class="suggestion-card" data-prompt="اكتب لي مسودة احترافية باللغة العربية عن فكرة أريد شرحها." type="button"><span class="suggestion-icon icon-cyan">✎</span><span class="suggestion-copy"><b>اكتب بثقة</b><small>رسائل ونصوص وأفكار</small></span><span class="suggestion-arrow">↗</span></button>
+            <button class="suggestion-card" data-prompt="افتح قوقل" type="button"><span class="suggestion-icon icon-green">↗</span><span class="suggestion-copy"><b>أنجز على جهازك</b><small>اقتراح إجراء قبل التنفيذ</small></span><span class="suggestion-arrow">↗</span></button>
+          </div>
+        </div>
+        <div id="messages" class="messages" aria-live="polite" aria-relevant="additions text" hidden></div>
+      </section>
+
+      <footer class="composer-area">
+        <form id="composer-form" class="composer">
+          <textarea id="message-input" rows="1" maxlength="8000" placeholder="اكتب أي شيء يخطر ببالك..." aria-label="اكتب رسالتك" required></textarea>
+          <div class="composer-toolbar"><div class="composer-hint"><span class="hint-dot"></span><span>Enter للإرسال</span><span class="hint-divider">·</span><span>Shift + Enter لسطر جديد</span></div><button id="send-button" class="send-button" type="submit"><span>إرسال</span><svg viewBox="0 0 24 24"><path d="M5 12h13M12 5l7 7-7 7"/></svg></button></div>
+        </form>
+        <p class="composer-disclaimer"><svg viewBox="0 0 24 24"><path d="M12 3 20 7v5c0 4.4-3.4 7.6-8 9-4.6-1.4-8-4.6-8-9V7l8-4Z"/><path d="m9 12 2 2 4-4"/></svg> قد يخطئ الذكاء الاصطناعي. راجع النتائج، ووافق على كل إجراء قبل تنفيذه.</p>
+      </footer>
+    </main>
+  </div>
+
+  <dialog id="settings-modal" class="settings-modal">
+    <div class="modal-header"><div><span class="eyebrow">تخصيص تجربتك</span><h2>الإعدادات</h2></div><button id="close-settings-button" class="icon-button modal-close" type="button" aria-label="إغلاق">×</button></div>
+    <div class="settings-content">
+      <section class="settings-section"><h3>الحساب</h3><div class="setting-row"><div class="setting-label"><b>الحساب الحالي</b><small id="settings-account-description">مساحة محلية على هذا الجهاز</small></div><span class="settings-badge" id="settings-auth-badge">محلي</span></div></section>
+      <section class="settings-section"><h3>الاتصال بالمساعد المحلي</h3><label class="setting-field" for="agent-url-input"><span>عنوان Ly AI المحلي</span><input id="agent-url-input" type="url" value="http://127.0.0.1:5000" dir="ltr" autocomplete="url"><small>لأمان جهازك، يُسمح بعنوان localhost فقط. الموقع المنشور يحتاج تشغيل الرفيق المحلي على نفس الجهاز.</small></label><button id="save-agent-url-button" class="secondary-button" type="button">حفظ الاتصال وتجربته</button><p id="settings-agent-status" class="settings-help" role="status"></p></section>
+      <section class="settings-section"><h3>المظهر</h3><div class="setting-row"><div class="setting-label"><b>الواجهة الداكنة</b><small>ألوان هادئة ومريحة للعين</small></div><label class="switch"><input id="theme-toggle" type="checkbox" checked><span></span></label></div></section>
+      <section class="settings-section"><h3>التطبيق</h3><div class="setting-row"><div class="setting-label"><b>تثبيت Ly AI</b><small>استخدمه كنافذة تطبيق مستقلة</small></div><button id="settings-install-button" class="secondary-button" type="button">تثبيت / تعليمات</button></div><div class="setting-row"><div class="setting-label"><b>سجل المحادثات</b><small>المحفوظ على هذا المتصفح</small></div><button id="settings-clear-history-button" class="danger-button" type="button">مسح السجل</button></div></section>
+      <section class="settings-section safety-section"><div class="safety-icon">◇</div><div><b>الأمان والخصوصية</b><p>أسرار مزوّدي الدخول تحفظ على الخادم فقط. سجل المحادثات في هذا الإصدار يُخزّن محليًا في المتصفح. لا توافق على إجراء لا تتعرف عليه.</p></div></section>
+    </div>
+    <div class="modal-footer"><span>Ly AI Studio · 3.0.0</span><button id="done-settings-button" class="primary-button" type="button">تم</button></div>
+  </dialog>
+
+  <dialog id="install-help-modal" class="settings-modal compact-modal"><div class="modal-header"><div><span class="eyebrow">استخدمه كتطبيق</span><h2>تثبيت Ly AI</h2></div><button id="close-install-help" class="icon-button modal-close" type="button" aria-label="إغلاق">×</button></div><div class="install-instructions"><div class="install-step"><span>1</span><p><b>على الكمبيوتر</b><br>افتح الموقع في Chrome أو Edge، ثم اضغط زر «تثبيت» إذا ظهر، أو اختر «تثبيت الصفحة كتطبيق» من قائمة المتصفح.</p></div><div class="install-step"><span>2</span><p><b>على Android</b><br>افتح الرابط في Chrome ثم القائمة ⋮ واختر «تثبيت التطبيق» أو «إضافة إلى الشاشة الرئيسية».</p></div><div class="install-step"><span>3</span><p><b>على iPhone</b><br>افتحه في Safari، اضغط زر المشاركة، ثم «إضافة إلى الشاشة الرئيسية».</p></div><p class="settings-help">لا يمكن للموقع فرض التثبيت تلقائيًا. سيظهر تأكيد التثبيت من نظام التشغيل، ويمكنك الرفض.</p></div><div class="modal-footer"><span>التثبيت اختياري</span><button id="done-install-help" class="primary-button" type="button">فهمت</button></div></dialog>
+
+  <section id="install-nudge" class="install-nudge" aria-label="تثبيت Ly AI" hidden>
+    <div class="nudge-icon"><svg viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="3"/><path d="M9 8h6M9 12h6M9 16h3"/></svg></div>
+    <div class="nudge-copy"><b>تريد Ly AI كتطبيق؟</b><span>ثبّته للوصول السريع من جهازك.</span></div>
+    <button id="install-nudge-yes" type="button">نعم، تثبيت</button>
+    <button id="install-nudge-no" type="button" aria-label="ليس الآن">ليس الآن</button>
+  </section>
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+</body>
+</html>
